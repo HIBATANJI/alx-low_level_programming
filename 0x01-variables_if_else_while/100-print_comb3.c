@@ -3,16 +3,17 @@
 /**
  * main - main function
  * 
- * Return: 0 on success
+ * Return: 0 on (success)
  */
 int main(void)
+
 {
     int num1 = 0, num2 = 1, num1max = 98, num2max = 99;
     
     while (num1 <= num1max)
     {
         num2 = num1 + 1;
-        while (num2 <= num2maw)
+        while (num2 <= num2max)
         {
             putchar(num1 < 9 ? 0 + '0' : (num1 / 10) + '0');
             putchar(num2 < 9 ? num1 + '0' : (num1 % 10) + '0');
