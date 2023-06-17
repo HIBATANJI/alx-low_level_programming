@@ -34,6 +34,5 @@ int main(void)
 		j = '0';
 		i++;
 	}
-j = '0';
-}
 return (0);
+}
