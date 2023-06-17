@@ -1,33 +1,39 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of three digits
- * Return: Always 0 (Success)
+ * main - function tp print combination of two numbers
+ *
+ * Return : 0 on success
  */
+
 int main(void)
 {
-	int n, m, l;
+	int i = '0';
+	int j = '0';
 
-	for (n = 48; n < 58; n++)
+	while(i <= '9')
 	{
-		for (m = 49; m < 58; m++)
+		while (j <= '9')
 		{
-			for (l = 50; l < 58; l++)
+			if (!(i > j) || i == j)
 			{
-				if (l > m && m > n)
+				putchar(i);
+				putchar(j);
+				if (i == '8' && j == '9')
 				{
-					putchar(n);
-					putchar(m);
-					putchar(l);
-					if (n != 55 || m != 56)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
 				}
 			}
+			j++;
 		}
+		j = '0';
+		i++;
 	}
-	putchar('\n');
-	return (0);
+j = '0';
 }
+return (0);
