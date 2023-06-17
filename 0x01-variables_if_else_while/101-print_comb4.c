@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- * main -print three number combination
+ * main - print three number combination
  *
- * Return : 0 success
+ * Return: 0 (success)
  */
 
 int main(void)
-
 {
+
 	int i = '0';
 	int j = '0';
 	int k = '0';
