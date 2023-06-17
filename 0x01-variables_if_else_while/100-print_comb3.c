@@ -16,8 +16,8 @@ int main(void)
         while (num2 <= num2max)
         {
             putchar(num1 < 9 ? 0 + '0' : (num1 / 10) + '0');
-            putchar(num2 < 9 ? num1 + '0' : (num1 % 10) + '0');
-            putchar(',');
+            putchar(num1 < 9 ? num1 + '0' : (num1 % 10) + '0');
+            putchar(' ');
             putchar(num2 < 9 ? 0 + '0' : (num2 / 10) + '0');
             putchar(num2 < 9 ? num2 + '0' : (num2 % 10) + '0');
             
