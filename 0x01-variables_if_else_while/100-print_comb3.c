@@ -1,37 +1,33 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - main function
- * 
- * Return: 0 on (success)
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
+ 
 int main(void)
 
 {
-    int num1 = 0, num2 = 1, num1max = 98, num2max = 99;
+    int d, p;
     
-    while (num1 <= num1max)
+    for (p = '0'; d < '9'; d++)
     {
-        num2 = num1 + 1;
-        while (num2 <= num2max)
-        {
-            putchar(num1 < 9 ? 0 + '0' : (num1 / 10) + '0');
-            putchar(num1 < 9 ? num1 + '0' : (num1 % 10) + '0');
-            putchar(' ');
-            putchar(num2 < 9 ? 0 + '0' : (num2 / 10) + '0');
-            putchar(num2 < 9 ? num2 + '0' : (num2 % 10) + '0');
-            
-            if (num1 != num1max)
-            {
-                putchar(',');
-                putchar(' ');
-            }
-            
-            num2++;
-        }
-        num1++;
+        
+    for (p = d + 1; p <= '9'; p++)
+    {
+    if (p != d)
+    {
+    putchar(d);
+    putchar(p);
+    if (d == '8' && p == '9')
+    continue;
+    putchar(',');
+    putchar(' ');
+    }
+    }
     }
     putchar('\n');
-    
     return (0);
 }
